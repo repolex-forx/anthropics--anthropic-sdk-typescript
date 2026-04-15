@@ -1,0 +1,45 @@
+[2026-04-15T17:53:36Z] === ENRICH ITERATION 1 START | repo=anthropics/anthropic-sdk-typescript sha=0b536ae0 ===
+[2026-04-15T17:53:36Z] [iter=1] PHASE START: enrich repo=anthropics/anthropic-sdk-typescript sha=0b536ae0 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/0b536ae0-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/0b536ae0e9c16ef63bf08a0e4b7150211b085d6e.nq.gz
+[2026-04-15T17:53:58Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=83 MB
+[2026-04-15T17:54:05Z] [iter=1] AST store loaded triples=920155 load_secs=7 mem_mb=907 MB
+[2026-04-15T17:54:05Z] [iter=1] Step 2: Finding LSP targets mem_mb=907 MB
+[2026-04-15T17:54:06Z] [iter=1] LSP targets found call_sites=7308 imports=517 extends=55 implements=1 secs=1
+[2026-04-15T17:54:07Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=907 MB
+[2026-04-15T17:54:12Z] [iter=1] Position index built positions=63246 nodes_with_types=71916 secs=5 mem_mb=907 MB
+[2026-04-15T17:54:12Z] [iter=1] Step 3: Starting LSP resolution mem_mb=907 MB already_completed_types=[] already_completed_files=0
+[2026-04-15T17:54:12Z] [iter=1] Resolving target type target_type=call_site count=7308
+[2026-04-15T17:54:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.6 files_done=0 resolved=0 errors=0 current=tests/index.test.ts
+[2026-04-15T17:54:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.1 files_done=3 resolved=43 errors=84 current=src/internal/utils/log.ts
+[2026-04-15T17:55:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.2 files_done=5 resolved=50 errors=262 current=tests/lib/tools/ToolRunner.test.ts
+[2026-04-15T17:57:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.7 files_done=6 resolved=62 errors=499 current=tests/lib/tools/BetaLocalFilesystemMemoryTool.test.ts
+[2026-04-15T17:57:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.3 files_done=7 resolved=65 errors=599 current=packages/aws-sdk/tests/auth.test.ts
+[2026-04-15T17:58:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.3 files_done=10 resolved=79 errors=766 current=packages/aws-sdk/tests/client.test.ts
+[2026-04-15T17:59:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.9 files_done=12 resolved=89 errors=869 current=examples/cancellation.ts
+[2026-04-15T18:00:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.2 files_done=18 resolved=144 errors=1086 current=tests/path.test.ts
+[2026-04-15T18:01:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.1 files_done=23 resolved=166 errors=1233 current=tests/uploads.test.ts
+[2026-04-15T18:02:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.8 files_done=25 resolved=178 errors=1349 current=tests/internal/decoders/line.test.ts
+[2026-04-15T18:02:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.3 files_done=28 resolved=187 errors=1440 current=tests/resources/beta/messages/parse.test.ts
+[2026-04-15T18:03:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.2 files_done=31 resolved=195 errors=1590 current=src/internal/shims.ts
+[2026-04-15T18:04:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.3 files_done=38 resolved=227 errors=1770 current=tests/lib/tools/ToolRunnerE2E.test.ts
+[2026-04-15T18:05:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.9 files_done=43 resolved=252 errors=1867 current=src/resources/beta/skills/skills.ts
+[2026-04-15T18:06:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.6 files_done=49 resolved=261 errors=1976 current=tests/api-resources/BetaMessageStream.test.ts
+[2026-04-15T18:06:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.2 files_done=51 resolved=264 errors=2072 current=src/resources/messages/messages.ts
+[2026-04-15T18:07:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.1 files_done=56 resolved=279 errors=2237 current=tests/lib/partial-json.test.ts
+[2026-04-15T18:08:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.7 files_done=59 resolved=285 errors=2335 current=packages/bedrock-sdk/src/client.ts
+[2026-04-15T18:08:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.3 files_done=66 resolved=308 errors=2433 current=examples/tools.ts
+[2026-04-15T18:09:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.9 files_done=73 resolved=324 errors=2528 current=packages/bedrock-sdk/src/core/auth.ts
+[2026-04-15T18:10:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.4 files_done=80 resolved=330 errors=2611 current=src/internal/parse.ts
+[2026-04-15T18:10:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.0 files_done=91 resolved=351 errors=2699 current=src/resources/beta/messages/messages.ts
+[2026-04-15T18:11:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.5 files_done=104 resolved=372 errors=2785 current=src/resources/beta/beta.ts
+[2026-04-15T18:11:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.0 files_done=123 resolved=384 errors=2867 current=src/internal/utils/env.ts
+[2026-04-15T18:12:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.5 files_done=143 resolved=415 errors=2946 current=scripts/utils/fix-index-exports.cjs
+[2026-04-15T18:12:13Z] [iter=1] Target type resolved target_type=call_site resolved=417 errors=2954 secs=1081 mem_mb=907 MB
+[2026-04-15T18:12:13Z] [iter=1] Resolving target type target_type=import_statement count=517
+[2026-04-15T18:12:22Z] [iter=1] Target type resolved target_type=import_statement resolved=360 errors=0 secs=9 mem_mb=907 MB
+[2026-04-15T18:12:22Z] [iter=1] Resolving target type target_type=extends_clause count=55
+[2026-04-15T18:12:26Z] [iter=1] Target type resolved target_type=extends_clause resolved=55 errors=0 secs=4 mem_mb=907 MB
+[2026-04-15T18:12:26Z] [iter=1] Resolving target type target_type=implements_clause count=1
+[2026-04-15T18:12:28Z] [iter=1] Target type resolved target_type=implements_clause resolved=1 errors=0 secs=2 mem_mb=907 MB
+[2026-04-15T18:12:35Z] [iter=1] Step 5: Writing final enrichment file triples=79802
+[2026-04-15T18:12:37Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/0b536ae0e9c16ef63bf08a0e4b7150211b085d6e.nq.gz size_kb=1690
+[2026-04-15T18:12:37Z] [iter=1] PHASE END: enrich elapsed_s=1141 elapsed_min=19.0 total_triples=79802
